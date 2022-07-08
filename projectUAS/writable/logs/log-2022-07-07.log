@@ -1,0 +1,14 @@
+ERROR - 2022-07-07 07:19:02 --> Error connecting to the database: Unknown database 'loket'
+CRITICAL - 2022-07-07 07:19:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'loket'
+#0 C:\xampp\htdocs\LabUAS_project\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\LabUAS_project\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\LabUAS_project\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\LabUAS_project\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#4 C:\xampp\htdocs\LabUAS_project\app\Controllers\Home.php(14): CodeIgniter\BaseModel->find()
+#5 C:\xampp\htdocs\LabUAS_project\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\LabUAS_project\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\LabUAS_project\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\LabUAS_project\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\LabUAS_project\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
